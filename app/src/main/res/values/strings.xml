@@ -1,0 +1,113 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">ProjectThree</string>
+
+    <!--The Topping-->
+    <string name="part_1_single_choice">Part.I:Single Choice(10 out of 70)</string>
+    <string name="part_2_multiple_choice">Part.II:Multiple Choice(10 out of 20)</string>
+    <string name="part_3_fill_in_the_blanks">Part.III:Fill In The Blanks(10 out of 10)</string>
+
+    <!--The question_1 and answer group-->
+    <string name="question_1">1.What three letters turn a girl into a woman?</string>
+    <string name="answer_group_1_1">sun</string>
+    <string name="answer_group_1_2">dab</string>
+    <string name="answer_group_1_3">eye</string>
+    <string name="answer_group_1_4">age</string>
+
+    <!--The question_2 and answer group-->
+    <string name="question_2">2.What’s too much for two and just right for one?</string>
+    <string name="answer_group_2_1">time</string>
+    <string name="answer_group_2_2">secret</string>
+    <string name="answer_group_2_3">friend</string>
+    <string name="answer_group_2_4">from</string>
+
+    <!--The question_3 and answer group-->
+    <string name="question_3">3.A candle burns out in sixty minutes , how many minutes will it take five candles burning together?</string>
+    <string name="answer_group_3_1">300 minutes</string>
+    <string name="answer_group_3_2">200 minutes</string>
+    <string name="answer_group_3_3">100 minutes</string>
+    <string name="answer_group_3_4">60 minutes</string>
+
+    <!--The question_4 and answer group-->
+    <string name="question_4">4.I have many leaves.But I am not a bloom and not a tree.You can see me every day. What am I?</string>
+    <string name="answer_group_4_1">Flower</string>
+    <string name="answer_group_4_2">Bird</string>
+    <string name="answer_group_4_3">Grass</string>
+    <string name="answer_group_4_4">Book</string>
+
+    <!--The question_5 and answer group-->
+    <string name="question_5">5.Which letter is a kind of drink and which letter is difficult to understand?</string>
+    <string name="answer_group_5_1">T and Y</string>
+    <string name="answer_group_5_2">W and Z</string>
+    <string name="answer_group_5_3">S and X</string>
+    <string name="answer_group_5_4">I and N</string>
+
+    <!--The question_6 and answer group-->
+    <string name="question_6">6.Why can the world never come to the end? Because it is?</string>
+    <string name="answer_group_6_1">big</string>
+    <string name="answer_group_6_2">round</string>
+    <string name="answer_group_6_3">long</string>
+    <string name="answer_group_6_4">wide</string>
+
+    <!--The question_7 and answer group-->
+    <string name="question_7">7.If your uncle’s sister is not your aunt, then she must be your _______.</string>
+    <string name="answer_group_7_1">grandma</string>
+    <string name="answer_group_7_2">cousin</string>
+    <string name="answer_group_7_3">mother</string>
+    <string name="answer_group_7_4">wife</string>
+
+    <!--The question_8 and answer group-->
+    <string name="question_8">8.Which music is from Disney cinema?</string>
+    <string name="answer_group_8_1">Under the Sea</string>
+    <string name="answer_group_8_2">A Whole New World</string>
+    <string name="answer_group_8_3">Let It Go</string>
+    <string name="answer_group_8_4">How Far I’ll Go</string>
+
+    <!--The question_9 and answer group-->
+    <string name="question_9">9.which are equals of one plus one?</string>
+    <string name="answer_group_9_1">0"-"2</string>
+    <string name="answer_group_9_2">2*1</string>
+    <string name="answer_group_9_3">6/2</string>
+    <string name="answer_group_9_4">3"-"1</string>
+
+    <!--The question_10 and answer group-->
+    <string name="question_10">10.Why does a dog afraaid of sunshine?</string>
+    <string name="hot_dog">hot dog</string>
+    <string name="hotdog">hotdog</string>
+
+    <!--The Button of submit-->
+    <string name="submit">submit</string>
+
+    <!--Congratulations Topping,it was be use in displayResultMessage() method.-->
+    <string name="congratulations">Congratulations!!\n</string>
+
+    <!--Total scores,it was be used in createResultMessage() method.-->
+    <string name="total_scores">
+        "Your score is: "
+        <xliff:g example="70" id="totalScore">%1$d</xliff:g>
+        (out of 100)\n
+    </string>
+
+    <!--Correct answer,it was be used in createResultMessage() method.-->
+    <string name="the_correct_answer">
+        The correct answer:\n
+        1. age\n
+        2. secret\n
+        3. 60 minutes\n
+        4. Book\n
+        5. T and Y\n
+        6. round\n
+        7. mother\n
+        8. Under the Sea、A Whole New World、Let It Go、How Far I’ll Go\n
+        9. 2*1、3"-"1\n
+    </string>
+
+    <!--The hint of edit text,it was be used in displayResultMessage() method.-->
+    <string name="edit_text_hint_answer_10">please type in you answer</string>
+
+    <!--The toast of unchecked single-choice,it was be used in showToast() method.-->
+    <string name="toast_unchecked_single_choice">All single-choice questions must be checked</string>
+
+    <!--Show the answer is right or wrong,it was be used in activity_main.xml-->
+    <string name="icon_description">show the answer is right or wrong</string>
+
+</resources>
