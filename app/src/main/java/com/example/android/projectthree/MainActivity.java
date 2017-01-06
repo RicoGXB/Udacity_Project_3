@@ -13,16 +13,18 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int score_1 = -1;
-    int score_2 = -1;
-    int score_3 = -1;
-    int score_4 = -1;
-    int score_5 = -1;
-    int score_6 = -1;
-    int score_7 = -1;
-    double score_8 = 0;
-    double score_9 = 5;
-    int score_10 = 0;
+    private static final int unset = -1;
+    private int score_1 = unset;
+    private int score_2 = unset;
+    private int score_3 = unset;
+    private int score_4 = unset;
+    private int score_5 = unset;
+    private int score_6 = unset;
+    private int score_7 = unset;
+    private double score_8 = 0;
+    private double score_9 = 5;
+    private int score_10 = 0;
+    private int rightScore = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +38,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view is Button.
      */
     public void onClickSubmit(View view) {
-
-        if (score_1 < 0 || score_2 < 0 || score_3 < 0 || score_4 < 0 || score_5 < 0 || score_6 < 0 || score_7 < 0) {
+        if (score_1 == unset || score_2 == unset || score_3 == unset || score_4 == unset || score_5 == unset || score_6 == unset || score_7 == unset) {
             showToast();
         } else {
             int totalSingleChoiceScore = calculateSingleChoiceScore();
@@ -239,7 +240,7 @@ public class MainActivity extends AppCompatActivity {
      * The correct answer is hot dog or hotdog.
      */
     private int calculateEditTextScore() {
-        String editTextContent = ((EditText) findViewById(R.id.edit_text_10_1)).getText().toString();
+        String editTextContent = ((EditText) findViewById(R.id.edit_text_10_1)).getText().toString().trim();
         if (editTextContent.equalsIgnoreCase(getString(R.string.hot_dog)) || editTextContent.equalsIgnoreCase(getString(R.string.hotdog))) {
             return score_10 = 10;
         } else {
@@ -281,52 +282,52 @@ public class MainActivity extends AppCompatActivity {
      * This method judge whether or not show the Wrong_icon(error) .
      */
     private void showWrongIcon() {
-        if (score_1 != 10) {
+        if (score_1 != rightScore) {
             ((ImageView) findViewById(R.id.question_1_wrong_icon)).setImageResource(R.drawable.wrong);
         } else {
             ((ImageView) findViewById(R.id.question_1_wrong_icon)).setImageResource(R.drawable.right);
         }
-        if (score_2 != 10) {
+        if (score_2 != rightScore) {
             ((ImageView) findViewById(R.id.question_2_wrong_icon)).setImageResource(R.drawable.wrong);
         } else {
             ((ImageView) findViewById(R.id.question_2_wrong_icon)).setImageResource(R.drawable.right);
         }
-        if (score_3 != 10) {
+        if (score_3 != rightScore) {
             ((ImageView) findViewById(R.id.question_3_wrong_icon)).setImageResource(R.drawable.wrong);
         } else {
             ((ImageView) findViewById(R.id.question_3_wrong_icon)).setImageResource(R.drawable.right);
         }
-        if (score_4 != 10) {
+        if (score_4 != rightScore) {
             ((ImageView) findViewById(R.id.question_4_wrong_icon)).setImageResource(R.drawable.wrong);
         } else {
             ((ImageView) findViewById(R.id.question_4_wrong_icon)).setImageResource(R.drawable.right);
         }
-        if (score_5 != 10) {
+        if (score_5 != rightScore) {
             ((ImageView) findViewById(R.id.question_5_wrong_icon)).setImageResource(R.drawable.wrong);
         } else {
             ((ImageView) findViewById(R.id.question_5_wrong_icon)).setImageResource(R.drawable.right);
         }
-        if (score_6 != 10) {
+        if (score_6 != rightScore) {
             ((ImageView) findViewById(R.id.question_6_wrong_icon)).setImageResource(R.drawable.wrong);
         } else {
             ((ImageView) findViewById(R.id.question_6_wrong_icon)).setImageResource(R.drawable.right);
         }
-        if (score_7 != 10) {
+        if (score_7 != rightScore) {
             ((ImageView) findViewById(R.id.question_7_wrong_icon)).setImageResource(R.drawable.wrong);
         } else {
             ((ImageView) findViewById(R.id.question_7_wrong_icon)).setImageResource(R.drawable.right);
         }
-        if (score_8 != 10) {
+        if (score_8 != rightScore) {
             ((ImageView) findViewById(R.id.question_8_wrong_icon)).setImageResource(R.drawable.wrong);
         } else {
             ((ImageView) findViewById(R.id.question_8_wrong_icon)).setImageResource(R.drawable.right);
         }
-        if (score_9 != 10) {
+        if (score_9 != rightScore) {
             ((ImageView) findViewById(R.id.question_9_wrong_icon)).setImageResource(R.drawable.wrong);
         } else {
             ((ImageView) findViewById(R.id.question_9_wrong_icon)).setImageResource(R.drawable.right);
         }
-        if (score_10 != 10) {
+        if (score_10 != rightScore) {
             ((ImageView) findViewById(R.id.question_10_wrong_icon)).setImageResource(R.drawable.wrong);
         } else {
             ((ImageView) findViewById(R.id.question_10_wrong_icon)).setImageResource(R.drawable.right);
